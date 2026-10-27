@@ -1,117 +1,85 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:1e3c72,100:2a5298&height=180&section=header&text=Jung%20InWoong&fontSize=42&fontColor=ffffff&desc=Backend%20Developer&descAlignY=72&descSize=18)
+<h1>정인웅 · Jung InWoong</h1>
 
-</div>
+<p><b>Java · Spring Boot 백엔드 개발자</b><br>
+문제가 생기면 "왜 안 되는지"를 로그와 실행 흐름으로 끝까지 추적합니다.</p>
 
-## 👋 About Me
-
-Spring Boot 기반 백엔드 개발자 **정인웅**입니다.
-<br>
-실제 팀 프로젝트를 통해 **API 설계, 인증 구현, AWS 배포** 경험을 쌓았습니다.
-
-- 🔐 JWT · OAuth2(카카오/구글) 소셜 로그인 구현 및 인증 트러블슈팅 경험
-- ☁️ AWS(EC2, RDS) + GitHub Actions를 활용한 배포 경험
-- 🧩 Spring Bean 의존성, 프록시 환경의 요청 처리 등 **"왜 안 되는지"를 끝까지 파고드는 것**을 좋아합니다
-
-<br>
-
-## 🛠 Tech Stack
-
-**Backend**
-<br>
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![JPA](https://img.shields.io/badge/JPA-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
-
-**Database**
-<br>
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-
-**Infra / DevOps**
-<br>
-![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
-![AWS RDS](https://img.shields.io/badge/AWS%20RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-
-**Frontend**
-<br>
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white)
-
-**Collaboration**
-<br>
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
-
-<br>
-
-## 🚀 Projects
-
-### 🏋️ Muscle Market — 운동용품 중고거래 플랫폼
-> AI 추천, 지도 기반 운동장 검색, 커뮤니티 기능을 갖춘 운동용품 중고거래 서비스
-
-`Java` `Spring Boot` `Spring Security` `JPA` `PostgreSQL` `AWS` `GitHub Actions`
-
-**담당 역할**
-- 🔐 JWT 기반 로그인 / 회원가입 구현
-- 🔑 카카오 소셜 로그인(OAuth2) 인증 구현
-- 🤖 앨런 AI 기반 운동용품 추천 시스템 개발
-- 🗺 카카오 지도 API 기반 운동장 검색 기능 개발
-- 🧭 온보딩 페이지 및 사용자 흐름 설계
-
-**트러블슈팅**
-- **순환 참조 해결**: OAuth2 구현 중 `SecurityConfig → OAuth2SuccessHandler → UserService` 간 Bean 순환 참조 발생 → `@Lazy`로 생성 시점을 지연시켜 해소
-- **redirect_uri mismatch 해결**: HTTPS 배포 환경에서 서버가 baseUrl을 HTTP로 인식 → `ForwardedHeaderFilter`와 forward-headers 설정으로 프록시 뒤 HTTPS 요청을 올바르게 인식하도록 수정
-
-🔗 [GitHub](https://github.com/team-muscle-market/MuscleMarket) · [Notion](https://www.notion.so/oreumi/Muscle-Market-2aeebaa8982b80c2953cfec28e27769d)
-
-<br>
-
-### 🛵 Dev의 민족 — 배민 사업자용 페이지 클론
-> 동네 사장님들이 매출 관리, 프로모션, 커뮤니티 활동을 한 곳에서 할 수 있는 서비스
-
-`Java` `Spring Boot` `Spring Security` `JPA` `PostgreSQL` `AWS`
-
-**담당 역할**
-- 🍽️ 식당 등록 / 수정 / 삭제 CRUD API 개발
-- 📊 관리자 페이지 통계 기능 개발
-
-**트러블슈팅**
-- **CSRF 403 오류 해결**: API 요청 시 CSRF 토큰 누락으로 403 발생 → 메타 태그와 JS 요청 헤더에 토큰을 실어 보내도록 수정
-
-🔗 [GitHub](https://github.com/Autopopcornshooter/EST_Second_Proj) · [Notion](https://www.notion.so/oreumi/2-Dev-277ebaa8982b807687d7eb999fd2431c)
-
-<br>
-
-## 💡 Activity
-
-- 🧮 백준 알고리즘 문제 풀이 (Java) — 코딩테스트 단계별 문제 풀이
-
-<!-- solved.ac 티어 뱃지를 넣고 싶다면 아래 주석을 풀고 YOUR_ID를 백준 아이디로 바꿔 주세요 -->
-<!-- [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=YOUR_ID)](https://solved.ac/YOUR_ID) -->
-
-<br>
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=dlsdnd122&show_icons=true&hide_border=true&count_private=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dlsdnd122&layout=compact&hide_border=true" />
+<a href="mailto:dlsdnd122@naver.com"><img src="https://img.shields.io/badge/Email-dlsdnd122@naver.com-1A1D21?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://app.notion.com/p/331530ef640e805ebd54e8cc4db7c16b"><img src="https://img.shields.io/badge/Portfolio-Notion-1A1D21?style=flat-square&logo=notion&logoColor=white" alt="Portfolio"></a>
 
 </div>
 
 <br>
 
-## 📫 Contact
+### About
 
-<!-- 사용하는 것만 남기고 링크를 채워 주세요 -->
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:your@email.com)
-[![Notion](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=notion&logoColor=white)](https://your-notion-portfolio-link)
+- 토목공학에서 컴퓨터SW로 전과해, 이스트소프트 백엔드 과정에서 두 번의 팀 프로젝트를 진행했습니다.
+- 인증(JWT · OAuth2), REST API 설계, AWS 배포까지 서비스 하나가 사용자에게 닿는 전 과정을 경험했습니다.
+- 영어학원에서 반복 업무를 생성형 AI로 자동화한 경험을 바탕으로, 강사용 AI 자동화 서비스 **EduDesk**를 만들고 있습니다.
+
+<br>
+
+### Featured Projects
+
+| 프로젝트 | 한 줄 소개 | 내가 맡은 일 | 링크 |
+| :-- | :-- | :-- | :-- |
+| **Muscle Market** | 운동용품 중고거래 · AI 추천 · 운동시설 검색 플랫폼 | 인증/보안, Google OAuth2, 앨런 AI 추천, 카카오맵 연동 | [Repo](https://github.com/team-muscle-market/MuscleMarket) · [Site](https://muscle-market.duckdns.org/) |
+| **Dev의 민족** | 동네 사장님을 위한 매장 관리 · 커뮤니티 서비스 | 식당 CRUD API, 관리자 통계, CSRF 이슈 해결 | [Repo](https://github.com/Autopopcornshooter/EST_Second_Proj) · [Demo](https://www.youtube.com/watch?v=BJOcfJpIQDo) |
+| **EduDesk** `진행 중` | 학원 강사용 AI 시험 자료 자동화 플랫폼 | LLM 기반 PDF 파싱 파이프라인, 멀티테넌시 설계 | [Org](https://github.com/team-edudesk) |
+
+<br>
+
+### Troubleshooting
+
+<details>
+<summary><b>배포 후에만 실패한 구글 소셜 로그인</b> · Muscle Market</summary>
+<br>
+
+- **문제** 로컬에서는 정상이던 로그인이 Nginx 리버스 프록시 뒤 배포 환경에서 `redirect_uri_mismatch`로 실패
+- **원인** 외부 HTTPS / 내부 HTTP 구조에서 `X-Forwarded-Proto` 헤더를 인식하지 못해 baseUrl을 http로 계산
+- **해결** `ForwardedHeaderFilter` 등록 + `server.forward-headers-strategy: native` 적용
+
+</details>
+
+<details>
+<summary><b>긴 AI 답변에서만 화면이 비던 추천 기능</b> · Muscle Market</summary>
+<br>
+
+- **문제** 서버 로그에는 AI 응답이 찍히는데 긴 답변일 때만 화면에 표시되지 않음
+- **원인** 지연 로딩(`FetchType.LAZY`) 필드를 DB 세션이 닫힌 뒤 JSON 직렬화 과정에서 접근
+- **해결** 필요한 필드만 담은 응답 DTO를 만들고, 트랜잭션 안의 서비스 계층에서 변환해 반환
+
+</details>
+
+<details>
+<summary><b>OAuth2 구현 중 발생한 Bean 순환 참조</b> · Muscle Market</summary>
+<br>
+
+- **문제** `SecurityConfig → OAuth2SuccessHandler → UserService` 사이에 순환 참조가 발생해 애플리케이션 기동 실패
+- **해결** `@Lazy`로 Bean 생성 시점을 지연시켜 순환 고리를 끊음
+
+</details>
+
+<details>
+<summary><b>관리자 API 요청마다 반복된 403</b> · Dev의 민족</summary>
+<br>
+
+- **문제** 관리자 페이지에서 JavaScript로 API를 호출할 때마다 403 Forbidden
+- **원인** CSRF 보호가 켜진 상태에서 요청에 CSRF 토큰이 빠져 있음
+- **해결** 메타 태그에 토큰을 넣고 요청 헤더에 함께 전송. 보안 기능을 끄지 않고 해결
+
+</details>
+
+<br>
+
+### Tech Stack
+
+| 분야 | 기술 |
+| :-- | :-- |
+| Backend | Java 17, Spring Boot 3, Spring Security, Spring Data JPA, REST API |
+| Database | PostgreSQL, MySQL |
+| Infra | AWS EC2 · RDS · S3, Nginx, GitHub Actions |
+| Frontend | Thymeleaf, JavaScript, HTML / CSS |
+| AI | LLM API 연동, 생성형 AI 기반 업무 자동화 |
+| Collaboration | Git, GitHub Flow, Notion |
